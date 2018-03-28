@@ -38,7 +38,7 @@ Rails.application.configure do
   # Checks for improperly declared sprockets dependencies.
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  config.action_mailer.default_url_options = { host: 'https://desolate-plains-66489.herokuapp.com'}
   ActionMailer::Base.smtp_settings = {
   :address        => 'smtp.gmail.com',
   :domain         => 'mail.google.com',
