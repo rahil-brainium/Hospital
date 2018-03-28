@@ -1,0 +1,13 @@
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "patients"[0m
+  [1m[35mFixture Insert (0.2ms)[0m  INSERT INTO "patients" ("name", "phone", "age", "sex", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2018-02-27 07:25:57', '2018-02-27 07:25:57', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "patients" ("name", "phone", "age", "sex", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2018-02-27 07:25:57', '2018-02-27 07:25:57', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "prescriptions"
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mFixture Delete (0.2ms)[0m  [1mDELETE FROM "patients"[0m
+  [1m[35mFixture Insert (0.1ms)[0m  INSERT INTO "patients" ("name", "phone", "age", "sex", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2018-02-27 07:25:57', '2018-02-27 07:25:57', 980190962)
+  [1m[36mFixture Insert (0.1ms)[0m  [1mINSERT INTO "patients" ("name", "phone", "age", "sex", "email", "created_at", "updated_at", "id") VALUES ('MyString', 'MyString', 'MyString', 'MyString', 'MyString', '2018-02-27 07:25:57', '2018-02-27 07:25:57', 298486374)[0m
+  [1m[35mFixture Delete (0.1ms)[0m  DELETE FROM "prescriptions"
+  [1m[36m (0.3ms)[0m  [1mrollback transaction[0m
